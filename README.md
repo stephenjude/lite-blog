@@ -28,6 +28,17 @@ php artisan setup:blog
 
 ## Usage
 
+### Site Config
+Update site details in the `config/services.php` file.
+```
+'meta' => [
+    'site_name' => 'My Perosnal Blog',
+    'mantra' => 'Web & Mobile Developer',      
+],
+
+```
+
+### Routes
 Homepage - `myblog.test`
 
 List Articles - `myblog.test/articles`

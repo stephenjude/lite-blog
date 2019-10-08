@@ -33,10 +33,10 @@ return [
     'unsplash' => [
         'key' => env('UNSPLASH_ACCESS_KEY'),
     ],
-
+    
     'meta' => [
-        'site_name' => 'Stephen Jude',
-        'mantra' => 'I build for the next billion users',      
+        'site_name' => 'My Perosnal Blog',
+        'mantra' => 'Web & Mobile Developer',      
     ],
 
 ];
