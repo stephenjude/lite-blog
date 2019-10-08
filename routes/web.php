@@ -15,4 +15,4 @@ Route::get('/', 'BlogController@index')->name('home');
 Route::get('/articles', 'BlogController@index')->name('articles');
 Route::get('/about', 'BlogController@about')->name('about');
 Route::get('/articles/{slug}', 'BlogController@findPostBySlug')->name('blog.post');
-Route::get('/fresh', 'BlogController@updateJsonScript')->name('index.json');
+Route::get('/fresh', 'BlogController@updateIndexedArticles')->name('index.json');

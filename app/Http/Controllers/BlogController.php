@@ -7,6 +7,12 @@ use Wink\WinkPost;
 class BlogController extends Controller
 {
 
+
+    /**
+     * Show blog homepage.
+     *
+     * @return View
+     */
     public function index()
     {
         $data = [
@@ -19,23 +25,15 @@ class BlogController extends Controller
         return view('index', compact('data'));
     }
 
-    public function updateJsonScript()
+
+    /**
+     * Show about blog.
+     *
+     * @return View
+     */
+    public function about()
     {
-        $data = collect(WinkPost::live()
-            ->orderBy('publish_date', 'DESC')
-            ->get())->map(function ($item, $key) {
-            return [
-                "title" => $item->title,
-                "link" => post_url($item->slug),
-                "snippet" => $item->summary
-            ];
-        });
-
-        $file_path = public_path('index.json');
-
-        file_put_contents($file_path, $data->toJson());
-
-        return "Indexed Json Script updated for live search";
+        return view('about');
     }
 
 
@@ -70,9 +68,29 @@ class BlogController extends Controller
         abort(404);
     }
 
+    
 
-    public function about()
+    /**
+     * Update indexed articles.
+     *
+     * @return string
+     */
+    public function updateIndexedArticles()
     {
-        return view('about');
+        $data = collect(WinkPost::live()
+            ->orderBy('publish_date', 'DESC')
+            ->get())->map(function ($item, $key) {
+            return [
+                "title" => $item->title,
+                "link" => post_url($item->slug),
+                "snippet" => $item->summary
+            ];
+        });
+
+        $file_path = public_path('index.json');
+
+        file_put_contents($file_path, $data->toJson());
+
+        return "Indexed articles updated for live search";
     }
 }
