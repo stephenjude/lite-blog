@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Wink\WinkPost;
 
-class HomeController extends Controller
+class BlogController extends Controller
 {
 
     public function index()
@@ -64,7 +64,7 @@ class HomeController extends Controller
                 'prev'   => $prev,
             ];
 
-            return view('post', compact('data', 'meta'));
+            return view('post', compact('data'));
         }
 
         abort(404);

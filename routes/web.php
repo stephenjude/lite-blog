@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/articles', 'HomeController@index')->name('articles');
-Route::get('/about', 'HomeController@about')->name('about');
-Route::get('/articles/{slug}', 'HomeController@findPostBySlug')->name('blog.post');
-Route::get('/fresh', 'HomeController@updateJsonScript')->name('index.json');
+Route::get('/', 'BlogController@index')->name('home');
+Route::get('/articles', 'BlogController@index')->name('articles');
+Route::get('/about', 'BlogController@about')->name('about');
+Route::get('/articles/{slug}', 'BlogController@findPostBySlug')->name('blog.post');
+Route::get('/fresh', 'BlogController@updateJsonScript')->name('index.json');
