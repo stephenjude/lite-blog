@@ -33,10 +33,9 @@ return [
     'unsplash' => [
         'key' => env('UNSPLASH_ACCESS_KEY'),
     ],
-    
+
     'meta' => [
         'site_name' => 'My Perosnal Blog',
-        'mantra' => 'Web & Mobile Developer',      
+        'mantra' => 'Web & Mobile Developer',
     ],
-
 ];
