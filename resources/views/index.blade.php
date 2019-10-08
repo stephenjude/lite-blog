@@ -27,18 +27,6 @@
     <a href="{{ $previous }}" title="Previous Page" class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3">&LeftArrow;</a>
     @endif
 
-    {{--
-            @foreach ($data['posts'] as $pageNumber => $path)
-            @php 
-                $page_num = (int) $pageNumber + 1;
-            @endphp
-                <a
-                    href="{{ post_url($post->slug) }}"
-    title="Go to Page {{ $page_num }}"
-    class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-5 py-3 {{$data['posts']->currentPage() == $page_num ? 'text-blue-600' : '' }}"
-    >{{ $page_num }}</a>
-    @endforeach
-    --}}
 
     @if ($next = $data['posts']->nextPageUrl())
     <a href="{{ $next }}" title="Next Page" class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3">&RightArrow;</a>

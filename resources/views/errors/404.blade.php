@@ -1,16 +1,3 @@
-@php
-$page = (object) [
-            'baseUrl' => '',
-            'production' => false,
-            'siteName' => 'Stephen Jude',
-            'mantra' => 'I build for the next billion users',
-            'siteDescription' => 'Web & Mobile Developer ',
-            'description' => 'page not found',
-            'siteAuthor' => 'Stephen Jude',
-            'title' => '404'
-        ];
-@endphp
-
 @extends('layouts.master')
 
 @section('body')
