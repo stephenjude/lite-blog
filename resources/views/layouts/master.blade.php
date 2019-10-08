@@ -25,7 +25,7 @@
         <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
                 <a href="{{url('/')}}" title="{{ config('services.meta.site_name') }} home" class="inline-flex items-center">
-                    <img class="rounded-full h-8 md:h-10 mr-3" src="{{ asset('/img/logo.jpg')}}" alt="{{ config('services.meta.site_name') }} logo" />
+                    <img class="rounded-full h-8 md:h-10 mr-3" src="{{ asset('/img/logo.svg')}}" alt="{{ config('services.meta.site_name') }} logo" />
 
                     <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">{{ config('services.meta.site_name') }} <br>
                         <span class="text-sm text-gray-600">{{ config('services.meta.mantra') }}</span></h1>
