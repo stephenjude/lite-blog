@@ -68,7 +68,7 @@ class BlogController extends Controller
         abort(404);
     }
 
-    
+
 
     /**
      * Update indexed articles.
@@ -83,7 +83,7 @@ class BlogController extends Controller
             return [
                 "title" => $item->title,
                 "link" => post_url($item->slug),
-                "snippet" => $item->summary
+                "snippet" => $item->excerpt
             ];
         });
 
