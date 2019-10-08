@@ -19,7 +19,7 @@ composer create-project --prefer-dist  stephenjude/lite-blog myblog
 
 Scaffold blog backend (this includes storage link, lravel wink install & migrations)
 
-``` php
+``` bash
 php artisan setup:blog
 ```
 
