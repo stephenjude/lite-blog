@@ -35,7 +35,11 @@ Update site details in the `config/services.php` file.
     'site_name' => 'My Perosnal Blog',
     'mantra' => 'Web & Mobile Developer',      
 ],
+```
 
+To use unsplash images add this to your `.env` file
+```
+UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 ```
 
 ### Routes
