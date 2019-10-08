@@ -1,11 +1,11 @@
 # Laravel Lite Blog
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/stephenjude/lite-blog.svg?)](https://packagist.org/packages/stephenjude/lite-blog)
-[![Build Status](https://img.shields.io/travis/stephenjude/lite-blog/master.svg?)](https://travis-ci.org/stephenjude/lite-blog)
-[![Quality Score](https://img.shields.io/scrutinizer/g/stephenjude/lite-blog.svg?)](https://scrutinizer-ci.com/g/stephenjude/lite-blog)
-[![Total Downloads](https://img.shields.io/packagist/dt/stephenjude/lite-blog.svg?)](https://packagist.org/packages/stephenjude/lite-blog)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/stephenjude/lite-blog.svg)](https://packagist.org/packages/stephenjude/lite-blog)
+[![Build Status](https://img.shields.io/travis/stephenjude/lite-blog/master.svg)](https://travis-ci.org/stephenjude/lite-blog)
+[![Quality Score](https://img.shields.io/scrutinizer/g/stephenjude/lite-blog.svg)](https://scrutinizer-ci.com/g/stephenjude/lite-blog)
+[![Total Downloads](https://img.shields.io/packagist/dt/stephenjude/lite-blog.svg)](https://packagist.org/packages/stephenjude/lite-blog)
 
-A Laravel Lite Blog. This a minimal full blog generator built with [tailwindcss](https://tailwindcss.com/) and [wink](https://github.com/writingink/wink). The frontend is a replicate of [jigsaw blog template](https://jigsaw.tighten.co/) and the editor is [wink](https://github.com/writingink/wink) a laravel publishing package by [Mohamed Said](https://github.com/themsaid). 
+Lite Blog  a minimal full (frontend & backend) blog generator built with [tailwindcss](https://tailwindcss.com/) and [wink](https://github.com/writingink/wink) a laravel publishing package by [Mohamed Said](https://github.com/themsaid). The frontend is a replicate of [jigsaw blog template](https://jigsaw.tighten.co/). 
 
 
 ## Requirement
