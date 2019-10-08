@@ -12,7 +12,7 @@ Lite Blog  a minimal full (frontend & backend) blog generator built with [tailwi
 </p>
 
 ## Requirement
-Laravel Lite blog make use of [Laravel 6](https://laravel.com/docs/6.x/installation#server-requirements), so make sure you have meet laravel 6 server [requirements](https://laravel.com/docs/6.x/installation#server-requirements).
+Lite Blog make use of [Laravel 6](https://laravel.com/docs/6.x/installation#server-requirements), so make sure you have meet Laravel 6 server [requirements](https://laravel.com/docs/6.x/installation#server-requirements).
 
 ## Installation
 
@@ -61,16 +61,20 @@ This route should be called after publishing a new post. I am still working on a
 ### Screenshots
 
 
-Footer
+About
 <p align="center">
   <img src="https://ucarecdn.com/8bcc5dc2-dbab-4e55-b144-1ec5d13ee6a9/about.PNG">
 </p>
 
-
+Footer
 <p align="center">
   <img src="https://ucarecdn.com/2ea5aca3-1664-4c51-8f7f-689a9221011e/footer.PNG">
 </p>
 
+Editor
+<p align="center">
+  <img src="https://ucarecdn.com/94f0f4d8-4cfd-42df-a5a5-565b43256884/editor.PNG">
+</p>
 
 
 ### Security
