@@ -8,11 +8,12 @@
 @endpush
 
 @section('body')
+
 <h1>About Me</h1>
 
-<img src="{{ asset('/img/stephenjude.jpg')}}" alt="About image" class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
+<img src="{{ asset('/img/logo.svg')}}" alt="About image" class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
 
-<p class="mb-6">Hello, I am config('services.meta.site_title')</p>
+<p class="mb-6">Hello, I am John Doe</p>
 
 <p class="mb-6">
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
