@@ -78,7 +78,7 @@ About
   <img src="https://ucarecdn.com/8bcc5dc2-dbab-4e55-b144-1ec5d13ee6a9/about.PNG">
 </p>
 
-Footer
+Newsletter
 <p align="center">
   <img src="https://ucarecdn.com/2ea5aca3-1664-4c51-8f7f-689a9221011e/footer.PNG">
 </p>
