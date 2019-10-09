@@ -46,17 +46,23 @@ UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 ```
 
 ### Routes
-Homepage - `myblog.test`
 
-List Articles - `myblog.test/articles`
+|Routes|Url|
+|:------------- | :----------: |
+|Homepage| `myblog.test`|
+|List Articles|`myblog.test/articles`|
+|View Article|`myblog.test/articles/{slug}`|
+|Editor|`myblog.test/editor`|
+|Refresh Indexed Articles|`myblog.test/fresh`|
 
-View Article - `myblog.test/articles/{slug}`
+This `/fresh` route should be called after publishing/updating a post. I am still working on automating it.
 
-Editor - `myblog.test/editor`
+### Compiling assets (Optional)
+```bash 
+npm install
 
-Refresh Indexed Articles - `myblog.test/fresh` 
-
-This route should be called after publishing a new post. I am still working on automating it.
+npm run dev
+```
 
 ### Screenshots
 
