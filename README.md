@@ -35,7 +35,7 @@ Start the local development server
 ```
 php artisan serve
 ```
-## Usage
+## Configs
 
 ### Site Config
 Update site details in the `config/services.php` file.
@@ -45,13 +45,13 @@ Update site details in the `config/services.php` file.
     'mantra' => 'Web & Mobile Developer',      
 ],
 ```
-
+### Unsplash Integration
 To use unsplash images add this to your `.env` file
 ```
 UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 ```
 
-### Routes
+### Usage
 
 |Routes|Url|
 |:------------- | :----------: |
