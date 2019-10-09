@@ -16,19 +16,25 @@ Lite Blog make use of [Laravel 6](https://laravel.com/docs/6.x/installation#serv
 
 ## Installation
 
-You can install the package via composer:
+You can install the Lite Blog via composer create-projec:
 
 ```bash
 composer create-project --prefer-dist  stephenjude/lite-blog myblog
 ```
 
-create your database and update your `.env` file
+Create your database and update your `.env` file.
+
+Setup the installed lite blog application.
 ```bash
 cd myblog
 
 php artisan setup:blog
 ```
 
+Start the local development server
+```
+php artisan serve
+```
 ## Usage
 
 ### Site Config
@@ -49,7 +55,7 @@ UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 
 |Routes|Url|
 |:------------- | :----------: |
-|Homepage| `myblog.test`|
+|Homepage|`myblog.test`|
 |List Articles|`myblog.test/articles`|
 |View Article|`myblog.test/articles/{slug}`|
 |Editor|`myblog.test/editor`|
