@@ -58,7 +58,7 @@ UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 |Homepage|`myblog.test`|
 |List Articles|`myblog.test/articles`|
 |View Article|`myblog.test/articles/{slug}`|
-|Editor|`myblog.test/editor`|
+|Editor (Publishing Platform)|`myblog.test/editor`|
 |Refresh Indexed Articles|`myblog.test/fresh`|
 
 This `/fresh` route should be called after publishing/updating a post. I am still working on automating it.
