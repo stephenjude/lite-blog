@@ -1,4 +1,4 @@
-# Laravel Lite Blog
+# Lite Blog - A Laravel Blog Generator
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/stephenjude/lite-blog.svg)](https://packagist.org/packages/stephenjude/lite-blog)
 [![Build Status](https://img.shields.io/travis/stephenjude/lite-blog/master.svg)](https://travis-ci.org/stephenjude/lite-blog)

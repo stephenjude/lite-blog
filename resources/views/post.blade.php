@@ -7,6 +7,7 @@ $post = $data['post'];
 @endphp
 
 @push('meta')
+<meta name="keywords" content="{{ implode(',', $post['tags']) }}">
 <meta name="description" content="{{ $data['meta']['meta_description'] }}">
 <meta property="og:type" content="article">
 <meta name="og:title" content="{{ $data['meta']['opengraph_title'] }}">
