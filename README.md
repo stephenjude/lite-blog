@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/stephenjude/lite-blog.svg)](https://scrutinizer-ci.com/g/stephenjude/lite-blog)
 [![Total Downloads](https://img.shields.io/packagist/dt/stephenjude/lite-blog.svg)](https://packagist.org/packages/stephenjude/lite-blog)
 
-Lite Blog  a minimal full (frontend & backend) blog generator built with [tailwindcss](https://tailwindcss.com/) and [wink](https://github.com/writingink/wink) a laravel publishing package by [Mohamed Said](https://github.com/themsaid). The frontend is a replicate of [jigsaw blog template](https://jigsaw.tighten.co/). 
+Lite Blog  a minimal full (frontend & backend) blog generator built with [tailwindcss](https://tailwindcss.com/) and [wink](https://github.com/writingink/wink) a laravel publishing platform by [Mohamed Said](https://github.com/themsaid). The frontend is a replicate of [jigsaw blog template](https://jigsaw.tighten.co/). 
 
 <p align="center">
   <img src="https://ucarecdn.com/a571a7d3-c4d5-400d-8805-c1b6e2e5afc0/homepage.PNG">
@@ -72,7 +72,6 @@ npm run dev
 
 ### Screenshots
 
-
 About
 <p align="center">
   <img src="https://ucarecdn.com/8bcc5dc2-dbab-4e55-b144-1ec5d13ee6a9/about.PNG">
@@ -83,7 +82,7 @@ Newsletter
   <img src="https://ucarecdn.com/2ea5aca3-1664-4c51-8f7f-689a9221011e/footer.PNG">
 </p>
 
-Editor
+Publishing Platform (Wink)
 <p align="center">
   <img src="https://ucarecdn.com/94f0f4d8-4cfd-42df-a5a5-565b43256884/editor.PNG">
 </p>
