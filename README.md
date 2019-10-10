@@ -16,7 +16,7 @@ Lite Blog make use of [Laravel 6](https://laravel.com/docs/6.x/installation#serv
 
 ## Installation
 
-You can install the Lite Blog via composer create-projec:
+You can install the Lite Blog via composer create-project
 
 ```bash
 composer create-project --prefer-dist  stephenjude/lite-blog myblog
@@ -24,7 +24,7 @@ composer create-project --prefer-dist  stephenjude/lite-blog myblog
 
 Create your database and update your `.env` file.
 
-Setup the installed lite blog application.
+Setup your blog.
 ```bash
 cd myblog
 
