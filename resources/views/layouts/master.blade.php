@@ -54,7 +54,7 @@
 
         <ul class="list-reset inline-block text-center">
             <li class="inline-block">
-                <a href="https://twitter.com/username" title="Twitter">
+                <a href="https://twitter.com/username" target="_blank" title="Twitter">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -62,7 +62,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="https://github.com/username" title="GitHub">
+                <a href="https://github.com/username" target="_blank" title="GitHub">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="https://medium.com/@username" title="Medium">
+                <a href="https://medium.com/@username" target="_blank" title="Medium">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
@@ -78,7 +78,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="mailto:mail@gmail.com" title="Email">
+                <a href="mailto:mail@gmail.com" target="_blank" title="Email">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -86,7 +86,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="https://www.linkedin.com/in/username/" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/username/" target="_blank"itle="LinkedIn">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -94,7 +94,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="/blog/feed.atom" title="Atom">
+                <a href="#" target="_blank" title="Atom">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -105,7 +105,7 @@
         </ul>
         <ul class="flex flex-col md:flex-row justify-center list-reset">
             <li class="md:mr-2">
-                &copy; <a href="#" title="{{config('services.meta.site_name')}}">Lite Blog</a> {{ date('Y') }}.
+                &copy; <a href="#" title="{{config('services.meta.site_name')}}">{{config('services.meta.site_name')}}</a> {{ date('Y') }}.
             </li>
 
             <li>
