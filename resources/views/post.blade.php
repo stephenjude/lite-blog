@@ -7,7 +7,7 @@ $post = $data['post'];
 @endphp
 
 @push('meta')
-<meta name="keywords" content="{{ implode(',', $post['tags']) }}">
+<meta name="keywords" content="{{  $post['tags'] ?? implode(',', $post['tags']) }}">
 <meta name="description" content="{{ $data['meta']['meta_description'] }}">
 <meta property="og:type" content="article">
 <meta name="og:title" content="{{ $data['meta']['opengraph_title'] }}">
@@ -31,7 +31,7 @@ $post = $data['post'];
 <h1 class="leading-none mb-2">{{ $post->title }}</h1>
 
 <p class="text-gray-700 text-xm md:mt-0">
-    Published {{ format_date($post->published_at) }} • 
+    Published {{ format_date($post->published_at) }} •
     <a class="uppercase text-gray-700 text-base md:mt-0">
         {{ read_time($data['post']->body) }}
     </a>
