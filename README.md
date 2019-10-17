@@ -68,7 +68,7 @@ UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 ### Usage
 
 |Routes|Url|
-|:------------- | :----------: |
+|:------------- | :---------- |
 |Homepage|`myblog.test`|
 |List Articles|`myblog.test/articles`|
 |View Article|`myblog.test/articles/{slug}`|
