@@ -45,6 +45,20 @@ Update site details in the `config/services.php` file.
     'mantra' => 'Web & Mobile Developer',      
 ],
 ```
+
+### Social Profile Links
+Update site social profile link in the `config/services.php` file.
+```
+'social' => [
+    'linkedin' => 'https://www.linkedin.com/in/username/',
+    'email' => 'mailto:mail@gmail.com',
+    'medium' => 'https://medium.com/@username',
+    'github' => 'https://github.com/username',
+    'twitter' => 'https://twitter.com/username',
+    'atom' => '#',
+],
+```
+
 ### Unsplash Integration
 To use unsplash images add this to your `.env` file
 ```
