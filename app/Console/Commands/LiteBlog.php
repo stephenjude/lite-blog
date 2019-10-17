@@ -40,8 +40,13 @@ class LiteBlog extends Command
      */
     public function handle()
     {
+        $wink_options = [
+            '--tag' => 'wink-assets',
+            '--force' => 1
+        ];
+
         $this->call('storage:link');
-        $this->call('wink:install');
+        $this->call('vendor:publish', $wink_options);
         $this->call('wink:migrate');
     }
 }
