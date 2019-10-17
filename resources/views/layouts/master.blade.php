@@ -54,7 +54,7 @@
 
         <ul class="list-reset inline-block text-center">
             <li class="inline-block">
-                <a href="https://twitter.com/username" target="_blank" title="Twitter">
+                <a href="{{config('services.social.twitter')}}" target="_blank" title="Twitter">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -62,7 +62,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="https://github.com/username" target="_blank" title="GitHub">
+                <a href="{{config('services.social.github')}}" target="_blank" title="GitHub">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="https://medium.com/@username" target="_blank" title="Medium">
+                <a href="{{config('services.social.medium')}}" target="_blank" title="Medium">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
@@ -78,7 +78,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="mailto:mail@gmail.com" target="_blank" title="Email">
+                <a href="{{config('services.social.email')}}" target="_blank" title="Email">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -86,7 +86,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="https://www.linkedin.com/in/username/" target="_blank"itle="LinkedIn">
+                <a href="{{config('services.social.linkedin')}}" target="_blank"itle="LinkedIn">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -94,7 +94,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="#" target="_blank" title="Atom">
+                <a href="{{config('services.social.atom')}}" target="_blank" title="Atom">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

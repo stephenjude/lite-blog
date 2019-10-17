@@ -38,4 +38,12 @@ return [
         'site_name' => 'My Perosnal Blog',
         'mantra' => 'Web & Mobile Developer',
     ],
+    'social' => [
+        'linkedin' => 'https://www.linkedin.com/in/username/',
+        'email' => 'mailto:mail@gmail.com',
+        'medium' => 'https://medium.com/@username',
+        'github' => 'https://github.com/username',
+        'twitter' => 'https://twitter.com/username',
+        'atom' => '#',
+    ]
 ];
