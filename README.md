@@ -7,6 +7,8 @@
 
 Lite Blog  a minimal full (frontend & backend) blog generator built with [tailwindcss](https://tailwindcss.com/) and [wink](https://github.com/writingink/wink) a laravel publishing platform by [Mohamed Said](https://github.com/themsaid). The frontend is a replicate of [jigsaw blog template](https://jigsaw.tighten.co/). 
 
+I made a blog post on how to get started. [Check it here](http://stephenjude.tech/articles/lite-blog-a-laravel-blog-generator).
+
 <p align="center">
   <img src="https://ucarecdn.com/a571a7d3-c4d5-400d-8805-c1b6e2e5afc0/homepage.PNG">
 </p>
