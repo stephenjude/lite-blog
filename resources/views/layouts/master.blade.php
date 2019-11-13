@@ -94,7 +94,7 @@
                 </a>
             </li>
             <li class="inline-block">
-                <a href="{{config('services.social.atom')}}" target="_blank" title="Atom">
+                <a href="{{config('services.social.atxom')}}" target="_blank" title="Atom">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

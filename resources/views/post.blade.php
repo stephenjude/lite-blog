@@ -44,17 +44,17 @@ $post = $data['post'];
 
 <nav class="flex justify-between text-sm md:text-base">
     <div>
-        @if ($next = $data['next'])
-        <a href="{{post_url($next->slug) }}" title="Older Post: {{ $next->title }}">
-            &LeftArrow; {{ $next->title }}
+        @if ($previous = $data['prev'])
+        <a href="{{ post_url($previous->slug) }}" title="Newer Post: {{ $previous->title }}">
+            &LeftArrow; {{ $previous->title }}
         </a>
         @endif
     </div>
 
     <div>
-        @if ($previous = $data['prev'])
-        <a href="{{ post_url($previous->slug) }}" title="Newer Post: {{ $previous->title }}">
-            {{ $previous->title }} &RightArrow;
+        @if ($next = $data['next'])
+        <a href="{{post_url($next->slug) }}" title="Older Post: {{ $next->title }}">
+            {{ $next->title }} &RightArrow;
         </a>
         @endif
     </div>
