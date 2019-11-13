@@ -51,8 +51,9 @@ class BlogController extends Controller
         $post = $posts->firstWhere('slug', $slug);
 
         if (optional($post)->published) {
-            $next = $posts->sortBy('published_at')->firstWhere('published_at', '>', optional($post)->published_at);
-            $prev = $posts->sortBy('published_at')->firstWhere('published_at', '<', optional($post)->published_at);
+            
+            $next = $posts->sortByDesc('publish_date')->firstWhere('publish_date', '>', optional($post)->publish_date);
+            $prev = $posts->sortByDesc('publish_date')->firstWhere('publish_date', '<', optional($post)->publish_date);
 
             $data = [
                 'author' => $post->author,
