@@ -31,7 +31,7 @@ $post = $data['post'];
 <h1 class="leading-none mb-2">{{ $post->title }}</h1>
 
 <p class="text-gray-700 text-xm md:mt-0">
-    Published {{ format_date($post->published_at) }} •
+    Published {{ format_date($post->publish_date) }} •
     <a class="uppercase text-gray-700 text-base md:mt-0">
         {{ read_time($data['post']->body) }}
     </a>
