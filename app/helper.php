@@ -7,7 +7,13 @@ function post_url($slug)
 
 function format_date($date)
 {
-    return  \Carbon\Carbon::parse($date)->format('F j, Y');
+    $date = \Carbon\Carbon::parse($date);
+
+    if (now()->diffInDays($date) <= 23) {
+        return $date->diffForHumans();
+    }
+
+    return  $date->format('F j, Y');
 }
 
 function read_time($content)
