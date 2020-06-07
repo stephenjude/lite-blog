@@ -31,7 +31,10 @@ composer create-project --prefer-dist  stephenjude/lite-blog myblog
 cd myblog
 ```
 
-Create your database and update your `.env` file.
+Create your database and update your `.env` file. Make sure you update you `APP_URL`. Here is an example: 
+```
+APP_URL=http://myblog.test
+```
 
 Setup your blog.
 
@@ -84,7 +87,6 @@ UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 |Editor (Publishing Platform)|`myblog.test/editor`|
 |Refresh Indexed Articles|`myblog.test/fresh`|
 
-This `/fresh` route should be called after publishing/updating a post. I am still working on automating it.
 
 ### Compiling assets (Optional)
 ```bash 
