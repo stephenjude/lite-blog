@@ -24,12 +24,15 @@ You can install the Lite Blog via composer create-project
 composer create-project --prefer-dist  stephenjude/lite-blog myblog
 ```
 
+```bash
+cd myblog
+```
+
 Create your database and update your `.env` file.
 
 Setup your blog.
-```bash
-cd myblog
 
+```bash
 php artisan setup:blog
 ```
 
