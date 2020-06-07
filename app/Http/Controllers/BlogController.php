@@ -6,8 +6,6 @@ use Wink\WinkPost;
 
 class BlogController extends Controller
 {
-
-
     /**
      * Show blog homepage.
      *
@@ -16,15 +14,14 @@ class BlogController extends Controller
     public function index()
     {
         $data = [
-            'posts'  => WinkPost::with('tags')
-                ->live()
-                ->orderBy('publish_date', 'DESC')
-                ->simplePaginate(12)
+            'posts' => WinkPost::with('tags')
+                        ->live()
+                        ->orderBy('publish_date', 'DESC')
+                        ->simplePaginate(12)
         ];
 
         return view('index', compact('data'));
     }
-
 
     /**
      * Show about blog.
@@ -36,7 +33,6 @@ class BlogController extends Controller
         return view('about');
     }
 
-
     /**
      * Show a post given a slug.
      *
@@ -45,22 +41,22 @@ class BlogController extends Controller
      */
     public function findPostBySlug(string $slug)
     {
-        $posts = WinkPost::with('tags')
-            ->live()->get();
+        $posts = WinkPost::with('tags')->live()->get();
 
         $post = $posts->firstWhere('slug', $slug);
 
         if (optional($post)->published) {
-            
-            $next = $posts->sortByDesc('publish_date')->firstWhere('publish_date', '>', optional($post)->publish_date);
-            $prev = $posts->sortByDesc('publish_date')->firstWhere('publish_date', '<', optional($post)->publish_date);
+            $next = $posts->sortByDesc('publish_date')
+                ->firstWhere('publish_date', '>', optional($post)->publish_date);
+            $prev = $posts->sortByDesc('publish_date')
+                ->firstWhere('publish_date', '<', optional($post)->publish_date);
 
             $data = [
                 'author' => $post->author,
-                'post'   => $post,
-                'meta'   => $post->meta,
-                'next'   => $next,
-                'prev'   => $prev,
+                'post' => $post,
+                'meta' => $post->meta,
+                'next' => $next,
+                'prev' => $prev,
             ];
 
             return view('post', compact('data'));
@@ -69,7 +65,20 @@ class BlogController extends Controller
         abort(404);
     }
 
+    public function preview($postSlug)
+    {
+        $post = WinkPost::with('tags')->where('slug', $postSlug)->first();
 
+        $data = [
+            'author' => $post->author,
+            'post' => $post,
+            'meta' => $post->meta,
+            'next' => null,
+            'prev' => null,
+        ];
+
+        return view('post', compact('data'));
+    }
 
     /**
      * Update indexed articles.
@@ -81,17 +90,17 @@ class BlogController extends Controller
         $data = collect(WinkPost::live()
             ->orderBy('publish_date', 'DESC')
             ->get())->map(function ($item, $key) {
-            return [
-                "title" => $item->title,
-                "link" => post_url($item->slug),
-                "snippet" => $item->excerpt
-            ];
-        });
+                return [
+                    'title' => $item->title,
+                    'link' => post_url($item->slug),
+                    'snippet' => $item->excerpt
+                ];
+            });
 
         $file_path = public_path('index.json');
 
         file_put_contents($file_path, $data->toJson());
 
-        return "Indexed articles updated for live search";
+        return 'Indexed articles updated for live search';
     }
 }

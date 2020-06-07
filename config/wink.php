@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'database_connection' => env('WINK_DB_CONNECTION', 'wink'),
+    'database_connection' => env('DB_CONNECTION', 'wink'),
 
     /*
     |--------------------------------------------------------------------------
@@ -76,5 +76,5 @@ return [
     |
     */
 
-    'preview_path' => 'draft/preview/{postSlug}',
+    'preview_path' => url('draft/{postSlug}/preview'),
 ];
