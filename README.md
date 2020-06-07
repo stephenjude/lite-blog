@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/stephenjude/lite-blog.svg)](https://scrutinizer-ci.com/g/stephenjude/lite-blog)
 [![Total Downloads](https://img.shields.io/packagist/dt/stephenjude/lite-blog.svg)](https://packagist.org/packages/stephenjude/lite-blog)
 
-Lite Blog  a minimal full (frontend & backend) blog generator built with [tailwindcss](https://tailwindcss.com/) and [wink](https://github.com/writingink/wink) a laravel publishing platform by [Mohamed Said](https://github.com/themsaid). The frontend is a replicate of [jigsaw blog template](https://jigsaw.tighten.co/). 
+Lite Blog  a minimal full (frontend & backend) blog generator built with [tailwindcss](https://tailwindcss.com/) and [wink](https://github.com/themsaid/wink) a laravel publishing platform by [Mohamed Said](https://github.com/themsaid). The frontend is a replicate of [jigsaw blog template](https://jigsaw.tighten.co/). 
 
 I made a blog post on how to get started. [Check it here](http://stephenjude.me/articles/lite-blog-a-laravel-blog-generator).
 
@@ -14,7 +14,10 @@ I made a blog post on how to get started. [Check it here](http://stephenjude.me/
 </p>
 
 ## Requirement
-Lite Blog make use of [Laravel 6](https://laravel.com/docs/6.x/installation#server-requirements), so make sure you have meet Laravel 6 server [requirements](https://laravel.com/docs/6.x/installation#server-requirements).
+
+Lite Blog make use of [Laravel 7](https://laravel.com/docs/7.x/installation#server-requirements), so make sure you have meet Laravel 6 server [requirements](https://laravel.com/docs/7.x/installation#server-requirements).
+
+Requires  >= PHP 7.3
 
 ## Installation
 
@@ -76,7 +79,8 @@ UNSPLASH_ACCESS_KEY=xxxxxxxxxxxxx
 |:------------- | :---------- |
 |Homepage|`myblog.test`|
 |List Articles|`myblog.test/articles`|
-|View Article|`myblog.test/articles/{slug}`|
+|View Published Article|`myblog.test/articles/{slug}`|
+|View Draft Article|`myblog.test/draft/{slug}/preview`|
 |Editor (Publishing Platform)|`myblog.test/editor`|
 |Refresh Indexed Articles|`myblog.test/fresh`|
 
