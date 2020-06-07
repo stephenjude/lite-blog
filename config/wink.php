@@ -76,5 +76,5 @@ return [
     |
     */
 
-    'preview_path' => url('draft/{postSlug}/preview'),
+    'preview_path' => env('APP_URL').'/draft/{postSlug}/preview',
 ];
