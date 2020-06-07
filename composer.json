@@ -23,7 +23,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "writingink/wink": "^1.0.3"
+        "themsaid/wink": "^1.0.3"
     },
     "require-dev": {
         "laravel/ui": "^2.0",
