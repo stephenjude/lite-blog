@@ -12,8 +12,7 @@
 */
 
 Route::get('/', 'BlogController@index')->name('home');
-Route::get('articles', 'BlogController@index')->name('articles');
 Route::get('about', 'BlogController@about')->name('about');
+Route::get('articles', 'BlogController@index')->name('articles');
 Route::get('articles/{slug}', 'BlogController@findPostBySlug')->name('blog.post');
-Route::get('fresh', 'BlogController@updateIndexedArticles')->name('index.json');
 Route::get('draft/{postSlug}/preview', 'BlogController@preview')->name('preview');
