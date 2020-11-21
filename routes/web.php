@@ -11,8 +11,11 @@
 |
 */
 
-Route::get('/', 'BlogController@index')->name('home');
-Route::get('about', 'BlogController@about')->name('about');
-Route::get('articles', 'BlogController@index')->name('articles');
-Route::get('articles/{slug}', 'BlogController@findPostBySlug')->name('blog.post');
-Route::get('draft/{postSlug}/preview', 'BlogController@preview')->name('preview');
+use App\Http\Controllers\BlogController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', [BlogController::class, 'index'])->name('home');
+Route::get('about', [BlogController::class, 'about'])->name('about');
+Route::get('articles', [BlogController::class, 'index'])->name('articles');
+Route::get('articles/{slug}', [BlogController::class, 'findPostBySlug'])->name('blog.post');
+Route::get('draft/{postSlug}/preview', [BlogController::class, 'preview'])->name('preview');
