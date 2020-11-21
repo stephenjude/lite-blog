@@ -12,6 +12,7 @@ I made a blog post on how to get started. [Check it here](http://stephenjude.me/
 <p align="center">
   <img src="https://ucarecdn.com/a571a7d3-c4d5-400d-8805-c1b6e2e5afc0/homepage.PNG">
 </p>
+
 ### Roadmap
 - [ ] Add Laravel 8 compatibility
 - [ ] Blog Theme Feature(just like WordPress) 
