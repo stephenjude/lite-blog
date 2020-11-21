@@ -112,6 +112,13 @@ Publishing Platform (Wink)
   <img src="https://ucarecdn.com/94f0f4d8-4cfd-42df-a5a5-565b43256884/editor.PNG">
 </p>
 
+### Roadmap
+- [ ] Add Laravel 8 compatibility
+- [ ] Blog Theme Feature(just like WordPress) 
+- [ ] Free Sample Blog Themes
+- [ ] Blog Theme Development Docs
+- [ ] Optimized SEO
+- [ ] Optimized sitemap
 
 ### Security
 
