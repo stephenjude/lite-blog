@@ -3,9 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Log;
-use Symfony\Component\Console\Output\OutputInterface;
 
 class LiteBlog extends Command
 {
@@ -14,14 +11,14 @@ class LiteBlog extends Command
      *
      * @var string
      */
-    protected $signature = 'setup:blog';
+    protected $signature = 'blog:install';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Run blog installation process';
+    protected $description = 'Run blog installation commands';
 
     /**
      * Create a new command instance.
@@ -48,5 +45,8 @@ class LiteBlog extends Command
         $this->call('storage:link');
         $this->call('vendor:publish', $wink_options);
         $this->call('wink:migrate');
+        $this->call('blog:defaults');
+
+        return 0;
     }
 }

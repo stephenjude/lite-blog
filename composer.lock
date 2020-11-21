@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3edc530b7ca95447c7c74f39d5f3d6a8",
+    "content-hash": "6d00c798c89cfc61f200c4fc9c73a6ad",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7261,6 +7261,67 @@
                 }
             ],
             "time": "2020-09-28T06:39:44+00:00"
+        },
+        {
+            "name": "stephenjude/extended-artisan-commands",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stephenjude/extended-artisan-commands.git",
+                "reference": "c167f39c4f847b45f6db78cecca3e74415f49b42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stephenjude/extended-artisan-commands/zipball/c167f39c4f847b45f6db78cecca3e74415f49b42",
+                "reference": "c167f39c4f847b45f6db78cecca3e74415f49b42",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Stephenjude\\ExtendedArtisanCommands\\ExtendedArtisanCommandsServiceProvider"
+                    ],
+                    "aliases": {
+                        "ExtendedArtisanCommands": "Stephenjude\\ExtendedArtisanCommands\\ExtendedArtisanCommandsFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stephenjude\\ExtendedArtisanCommands\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Jude",
+                    "email": "stephenjudesuccess@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generate plain PHP files using artisan console commands.",
+            "homepage": "https://github.com/stephenjude/extended-artisan-commands",
+            "keywords": [
+                "extended-artisan-commands",
+                "stephenjude"
+            ],
+            "support": {
+                "issues": "https://github.com/stephenjude/extended-artisan-commands/issues",
+                "source": "https://github.com/stephenjude/extended-artisan-commands/tree/1.2"
+            },
+            "time": "2020-09-16T10:40:04+00:00"
         },
         {
             "name": "theseer/tokenizer",

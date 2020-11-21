@@ -26,12 +26,13 @@
         "themsaid/wink": "^1.2.0"
     },
     "require-dev": {
-        "laravel/ui": "^3.0",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
+        "laravel/ui": "^3.0",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3.3"
+        "phpunit/phpunit": "^9.3.3",
+        "stephenjude/extended-artisan-commands": "^1.2"
     },
     "config": {
         "optimize-autoloader": true,
